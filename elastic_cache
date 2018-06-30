@@ -1,0 +1,5 @@
+Amazon ElasticCache
+
+- Fully managed in-memory data store service.
+- Low latency data access for popular content.
+- Redis or Memcached engine.

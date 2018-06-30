@@ -1,0 +1,5 @@
+- Managed relational database service.
+- Amazon Aurora, Mysql, MariaDB, Oracle, Microsoft SQL, Postgresql, DynamoDB.
+- Handles routines database task such as provisioning, patching, backup, recovery, failure detection, and repair.
+- Multi-AZ for production applications.
+- Allows failover to standby.

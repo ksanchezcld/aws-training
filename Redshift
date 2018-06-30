@@ -1,0 +1,7 @@
+Amazon Redshift
+
+- Fully managed big data (petabyte-scale) wharehouse service.
+- Based on PostgreSQL.
+- Specifically designed for (OLAP) and (BI) applications.
+- Redshift cluster is a set of nodes, wich consist of a leader node and one or more computer nodes.
+- Choice of type and size for nodes.

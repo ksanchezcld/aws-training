@@ -1,0 +1,11 @@
+Amazon Neptune
+
+- Purpose built to store and navigate relationships.
+- uses graph structures:
+	- Nodes.
+	- Edges.
+	- Properties.
+
+- Graph query languagues:
+	- Gremlin.
+	- SPARQL.

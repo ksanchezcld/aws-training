@@ -1,0 +1,41 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+CloudFormation
+
+- Infrastructure as a Code (IAC) 
+- Support Json, Yaml templates.
+- Version control capability.
+- Templates describes all the aws resources and CloudFormation takes care of provisioning and configuring.
+
+TEMPLATE SECTIONS
+
+- Format Version.
+- Description.
+- Metadata.
+- Parameters.
+- Mappings.
+- Transform.
+- Outputs.
+- Resources.
+- Conditions.
+
+STACKSETS
+
+- A StackSet is a container for AWS CloudFormation stacks that lets you provision stacks across AWS accounts and regions by using a single AWS CloudFormation template.
+
+- StackSets allows you to create stacks across regions and in multiple accounts.
+
+CLOUDFORMER
+
+- Creates an aws CloudFormation template from an existing aws resources in your account.
+- You select resources from your account.
+
+
+CLOUDFORMATION DESIGNER
+
+- Visual tool that provides a drag and drop interface for adding resources to templates.
+- Supports Json and Yaml.

@@ -1,0 +1,19 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+VPC SECURITY
+
+- Security Groups
+	- Firewall at the instance level.
+	- Statefull.
+
+- Network access control lists (ACLs)
+	- Firewall at the subnet level.
+	- Network ACLs as a second layer of defense.
+	- Stateless.
+
+- Flow logs
+	- Capture information as Cloudwatch logs.

@@ -1,0 +1,21 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+ELASTICBEANSTALK
+
+- Release in 2011.
+- Deploy and manages applications without worrying about the infraestructure.
+- Capacity provisioning, load balancing, scaling, and health monitoring.
+- New versions can be upload through the consolee, a GIT repository or IDE and environment re-deployed.
+- Applications support:
+	- Docker Containers.
+	- NodeJS, Java, .Net, PHP, Ruby, Python & Go.
+	- Servers such as Apache, Nginx, Passenger & IIS.
+
+CYCLE
+-------------------     ---------------     --------------------     --------------------
+Create application  ---> upload verson  ---> launch environment  ---> Manage Environment
+-------------------     ---------------     --------------------     --------------------

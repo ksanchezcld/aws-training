@@ -1,0 +1,15 @@
+- NoSQL Database.
+- Consist of:
+	- Tables.
+	- Attributes.
+	- Items.
+	- Partition Key.
+	- Sort Key.
+
+DYNAMODB SECONDARY INDEXES
+
+- Efficient access to data with attributes other than the primary key.
+- There are two types:
+	- Local secondary index.
+	- Global secondary index.
+

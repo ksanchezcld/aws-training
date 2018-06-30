@@ -1,0 +1,155 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+- https://aws.amazon.com/certification/
+- https://www.aws.training/
+
+PATH - ROADMAP
+
+- FUNDATIONAL
+	- AWS Certified Cloud Practitioner.
+	- AWS Certified Solution Architect Associate.
+	- AWS Certified Solution Architect Professional.
+	- AWS Certified Developer Associate.
+	- AWS Certified Devops Engineer.
+ 
+ - Specialty Certifications
+ 	- AWS Certified Adavanced Networking Engineer.
+ 	- AWS Certified Big Data.
+ 	- AWS Certified Security.
+
+
+- Foundational - Validates overall understanding of the AWS Cloud. Prerequisite to achieving Specialty certification or an optional start towards Associate certification.
+
+- Associate - Technical role-based certifications. No prerequisite.
+
+- Professional - Highest level technical role-based certification. Relevant Associate certification required.
+
+- Specialty Certifications - Validate advanced skills in specific technical areas. Cloud Practitioner or Associate-level certification required.  
+
+- The Cloud Practitioner exam provides individuals with an overall understanding of the AWS Cloud to validate their knowledge with an industry-recognized credential.
+
+- AWS Certified Cloud Practitioner - This exam provides individuals in a larger variety of cloud and technology roles with a way to validate their AWS Cloud knowledge and enhance their professional credibility. This exam covers four domains, including: cloud concepts, security, technology, and billing and pricing.
+
+- The Cloud Practitioner. This exam validates an examinee's ability to:
+
+     - Define what the AWS Cloud is and the basic global infrastructure
+     - Describe basic AWS Cloud architectural principles
+     - Describe the AWS Cloud value proposition
+     - Describe key services on the AWS platform and their common use cases (for example, compute and analytics)
+     - Describe basic security and compliance aspects of the AWS platform and the shared security model
+     - Define the billing, account management, and pricing models
+     - Identify sources of documentation or technical assistance (for example, whitepapers or support tickets)
+     - Describe basic/core characteristics of deploying and operating in the AWS Cloud.
+
+We recommend candidates have at least six (6) months of experience with the AWS Cloud in any role, including technical, managerial, sales, purchasing, or financial.
+
+Candidates should have a basic understanding of IT services and their uses in the AWS Cloud platform.
+
+- These training courses and materials may be helpful for examination preparation:
+
+	- https://aws.amazon.com/training/course-descriptions/cloud-practitioner-essentials/
+	- https://aws.amazon.com/training/course-descriptions/essentials/
+	- https://www.aws.training/learningobject/curriculum?id=16357&src=cp-essentials
+	- https://aws.amazon.com/whitepapers/
+	- https://d0.awsstatic.com/whitepapers/aws-overview.pdf
+	- https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
+	- https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
+	- https://d1.awsstatic.com/whitepapers/aws-tco-web-applications.pdf
+	- https://aws.amazon.com/premiumsupport/compare-plans/
+	- https://d1.awsstatic.com/training-and-certification/Docs%20-%20Cloud%20Practitioner/AWS%20Certified%20Cloud%20Practitioner_Exam_Guide_v1.4_FINAL.PDF
+	- https://d1.awsstatic.com/training-and-certification/Docs%20-%20Cloud%20Practitioner/AWS%20Certified%20Cloud%20Practioner_Sample%20Questions_v1.1_FINAL.PDF
+
+==============================================
+- AWS Cloud Practitioner Essentials (Digital)
+==============================================
+- https://aws.amazon.com/certification/certified-cloud-practitioner/
+
+Description
+In this 100-level self-paced course, you’ll gain an overall understanding of the AWS Cloud, independent of specific technical roles. You will learn essential cloud concepts and AWS services, security, architecture, pricing, and support.
+
+Intended Audience
+This course is intended for:
+
+Sales
+Legal
+Marketing
+Business analysts
+Project managers
+C-level executives
+AWS Academy students
+Other IT-related professionals
+Course Objectives
+In this course, you will learn:
+
+AWS Cloud concepts and basic global infrastructure
+The key services on the AWS platform and their common use cases (e.g., compute, analytics, etc.)
+Basic AWS Cloud architectural principles
+Basic security and compliance aspects of the AWS platform and the shared security model
+Billing, account management, and pricing models
+Sources of documentation or technical assistance (e.g., whitepapers, support tickets, etc.)
+The AWS Cloud value proposition
+Core characteristics of deploying and operating in the AWS Cloud
+Prerequisites
+We recommend that attendees of this course have the following prerequisites:
+
+General IT technical knowledge
+General IT business knowledge
+Delivery Method
+This course is delivered through:
+
+Digital training
+Duration
+7 hours
+
+Course Outline
+This course covers the following concepts:
+
+AWS Cloud Practitioner Essentials: Introduction
+AWS Cloud Concepts Essentials
+Introduction to the Cloud
+Introduction to the AWS Cloud
+AWS Core Services Essentials
+Overview of Services and Categories
+Introduction to the AWS Global Infrastructure
+Introduction to Amazon VPC
+Introduction to Security Groups
+Introduction to Compute Services
+Introduction to AWS Storage Services
+Introduction to AWS Database Solutions
+AWS Security Essentials
+Introduction to AWS Security
+The AWS Shared Responsibility Model
+AWS Access Control and Management
+AWS Security Compliance Programs
+AWS Security Resources
+AWS Architecting Essentials
+Introduction to the Well-Architected Framework
+Reference Architecture: Fault Tolerance and High Availability
+Reference Architecture: Web Hosting
+AWS Pricing and Support Essentials
+Fundamentals of Pricing
+Pricing Details
+The TCO Calculator Overview
+AWS Support Plans Overview
+AWS Cloud Practitioner Essentials: Bonus Materials
+Supplementary videos that enhance concepts learned in the content modules of this course
+AWS Cloud Practitioner Essentials: Course Summary
+
+--------------
+Exam Overview
+--------------
+The exam is 100 USD
+Candidates have 90 minutes to complete the exam
+
+-------------------
+Available Languages
+-------------------
+The exams and exam guides are available in:
+English
+Japanese
+Korean
+Simplified Chinese

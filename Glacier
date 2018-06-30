@@ -1,0 +1,9 @@
+Amazon Glacier
+
+- Archiving Solution.
+- Lowest cost AWS object storage class.
+- 99.99999999% of durability across 3 AZs.
+- 3 retrieval options:
+	- Expedited (1-5 minutes).
+	- Standard (3-5 hours).
+	- Bulk (5-12 hours).

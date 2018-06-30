@@ -1,0 +1,73 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+SECURITY
+
+- S3 is secure by default. The bucket is private when created.
+- IAM roles, users and groups.
+- Bucket policies applied at the bucket level.
+- Access Control List (ACL) applied at the bucket and object level.
+
+S3 STORAGE CLASSES
+
+- Standard.
+	- 99.999999999% durability (Multi-AZ).
+	- 99.99% Availability.
+	- Support SSL encryption in transit and at rest.
+	- Lifecycle management.
+
+- Standard - Infrequent Access (IA).
+	- Same feature as S3 standard.
+	- Lower per GB storage price than standard 
+	- Per GB retrieval fee.
+
+- Standard - One Zone IA.
+	- 99.999999999% durability (Single AZ).
+	- 99.5% availability.
+	- Lower per GB storage price than standard IA.
+	- Per GB retrieval fee.
+
+- Reduced redundancy storage (RRS). 
+	- 99.99% durability and 99.99% availability.
+	- Being deprecated by AWS.
+
+
+BUCKET
+
+- Container for objects stored in S3.
+- Total volume of data and number of objects are unlimited.
+- Bucket name must:
+	- Be unique.
+	- Be at least 3 and no more than 63 characters long.
+	- Be lowercase.
+	- Must not contain uppercase characters or underscores.
+
+OBJECT
+
+- Entities (data/metadata) stored in a bucket.
+- 0 bytes to a max of 5 TB.
+- Largest object upload is 5 GB.
+- Multi-part upload for 100 MB to 5 TB.
+
+
+LIFECYCLE POLICIES
+
+- Obect deletion after expiry time.
+- Object archiving to Glacier after expiry time.
+- Can be restored from Glacier back to S3.
+
+
+S3 VERSIONING
+
+- Preserves copies of objects inside a bucket.
+- Individual objects can be restored to previous versions.
+- Deleted objects can be recovered.
+
+
+
+
+
+
