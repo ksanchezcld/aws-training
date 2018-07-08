@@ -1,0 +1,44 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+OPSWORKS
+
+- Configuration management platform.
+- Provides more control over infrastructure design and management than Elasticbeanstalk.
+- Infrastructure as a code using Chef recipes for fine grained control.
+- Consist of a CM model based upon stacks, layers and recipes.
+
+
+STACK
+
+- Top-level Opworks entity.
+- Represents a set of instances and applications that you want to manage collectively.
+
+LAYERS
+
+- Defines how to set up and configure instances and resources.
+- Stacks must contains one or more layers.
+- Layers must contain at least one instance.
+- Instances can be a member of multiple layers.
+- Apps represent code to run on your server.
+
+SCALING
+
+- 24/7 instances added to a layer can manually start, stop or reboot the corresponding EC2 instances.
+- Automatic Scaling could be:
+	- Time based instances. Based upon a schedule.
+	- Load based instances. Based upon several load metrics (Network Trafic , CPU Utilization) 
+
+>> The combination of all 3 types is an effective strategy.
+
+DEPLOYMENT
+
+- App and associated infrastructure is deployed automatically.
+- Chef recipes define infrastructure as a code.
+	- Customisation.
+	- Redeployment.
+	- Version control.
+	- Code reuse.

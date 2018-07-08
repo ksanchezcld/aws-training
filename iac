@@ -1,0 +1,13 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+IAS (Infrastructure as Code)
+
+- Allows infrastructure to be managed in the same way as software.
+- Version Control.
+- Allows rapid deployment and roll back if necessary.
+- Cloudformation Templates.
+- Cloudformation Designer.

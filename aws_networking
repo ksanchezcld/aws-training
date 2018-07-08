@@ -1,0 +1,11 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+- 3 Tier Arch. Design
+
+	- Web Layer - Front end.
+	- Application Layer - Back end - API
+	- Data Layer - DB/RDS

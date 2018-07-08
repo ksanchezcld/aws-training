@@ -1,0 +1,12 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+- AWS cuenta con dos características que puede usar para aumentar la seguridad de la VPC: 
+	- Los grupos de seguridad.
+	- Las ACL de red. 
+
+- Los grupos de seguridad controlan el tráfico de entrada y salida de las instancias.
+- ACL de red controlan el tráfico de entrada y salida de las subredes. 

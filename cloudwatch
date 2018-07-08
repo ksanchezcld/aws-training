@@ -1,0 +1,52 @@
+CLOUDWATCH METRICS
+
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+- Not available in all regions.
+
+- Used: 
+	- Billing.
+	- DynamoDB.
+	- EC2, EBS.
+	- Elastic Beanstalk.
+	- Opsworks.
+	- Kinesis Firehose.
+
+ALARMS
+
+- Billing alarms as well as resource alarms.
+- Integrates with SNS.
+- Three states: OK, ALARM & INSUFFICIENT_DATA
+
+>> If a metric is above the alarm threshold for the number of time periods defined by the evaluation period, an alarm is invoked.
+
+
+CLOUDWATCH LOGS
+
+- Monitor, store, and access your log files from EC2 instances, CloudTrail, or other resources.
+- Real time monitoring of log information.
+- Log Streams - Sequence of log events from a source.
+- Log Groups - Streams the same retention, monitoring, and access control settings.
+- Metric filters - Define how information is extracted to create data points.
+- Retention settings - How long events are kept in Cloudwatch logs.
+
+
+CLOUDWATCH EVENTS
+
+- Events
+	- Occur when resources change state.	
+		- EC2 state change.
+		- Autoscaling instance launch.
+	- CloudTrail integration
+		- API Calls.
+		- Log into console.
+
+- Rules
+	- Match incoming events and route them to one or more targets for processing.
+
+- Targets
+	- Can invoke AWS Lambada functions, Amazon SNS topics, Amazon SQS queues, Amazon Kinesis Streams, or built-in targets.

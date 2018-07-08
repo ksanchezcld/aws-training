@@ -1,0 +1,39 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+IAM - AWS Identity and Access Management
+
+- IAM. es un web service que ayuda a mantener un control de acceso seguro a los recursos de AWS para los usuarios.
+
+- Permite manejar usuarios y nivel de acceso a la consola y servicios de AWS.
+- Control centralizado de cuenta AWS.
+- Acceso compartido a tu cuenta AWS.
+- Manejo de indentidad federada (Active Directory, Facebook, Linkedin, etc.).
+- Autenticacion multifactor (MFA).
+- Manejo de acceso temporal para usuarios/dispositivos y servicios.
+- Manejo de rotacion de politicas de contraseña.
+- Manejo de Roles.
+
+
+CARASTERISTICAS
+
+- Shared access to your AWS account. Puedes otorgar permisos a ortas personas para administrar y utilizr recursos en tu cuenta de AWS sin necesidad de compartir tu password o llave de acceso (Access Key).
+
+- Granular permissions. Puedes otorgar diferentes permisos a diferentes personas para accesar a diferentes recursos.
+
+
+COMPONENTES IAM.
+
+- Usuarios. 
+- Grupos.
+- Roles.
+- Politicas.
+
+
+
+LINKS
+
+- https://www.youtube.com/watch?v=Ul6FW4UANGc&feature=youtu.be

@@ -1,0 +1,37 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+
+- Designing an application that can scale horizontally allows you to distribute application components, partition your data, and follow a services-oriented design strategy.
+
+- This approach will help you leverage elasticity of the AWS cloud infrastructure. 
+
+- Loosely coupled applications are typically implemented using message-oriented architectures.
+	- SQS.
+
+- Loosely coupled components can help you differentially scale-out your architecture by deploying more instances of any given component or by provisioning more powerful instances for components that require it.
+
+- you should try to design your components to be stateless as far as possible.
+
+- Implementing asynchronous processing wherever possible in your application can improve scalability.
+
+- Ensure you implement a dead letter queue for queue requests that fail after several retries (usually between 3-5 times). 
+
+- You can use the AWS SNS service for notifying components when a message's request processing has been completed.
+
+- create asynchronous pipelines for data flows within your application using AWS Kinesis data streams and AWS SQS queues, where you can route your data to different queues to be processed differently.
+
+- Try to offload as much content as possible to the AWS CloudFront CDN service for distribution to Amazon edge locations. 
+	- Static.
+	- Dynamic.
+	- Streaming.
+	- Interactive content.
+
+- Static content or files include that are stored in Amazon S3 and not on your web server instance. 
+	- This can reduce the load on your web servers.
+	- Improve the efficiency of maintaining content (by storing at one S3 location). 
+	- Reducing latency for your end users.
+	- Reducing overall costs (by reducing the size or the number of EC2 instances required for your web servers).

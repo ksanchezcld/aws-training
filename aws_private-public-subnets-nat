@@ -1,0 +1,31 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+https://docs.aws.amazon.com/es_es/AmazonVPC/latest/UserGuide/VPC_Scenario2.html
+
+- Escenario 2: VPC con subredes públicas y privadas (NAT)
+
+	- La configuración de este escenario incluye una nube virtual privada (VPC) con una subred pública y una subred privada. Este escenario se recomienda si desea ejecutar una aplicación web pública y, a la vez, mantener los servidores back-end a los que no se puede obtener acceso de forma pública. 
+
+	- Un ejemplo común es un sitio web multinivel, con los servidores web en una subred pública y los servidores de base de datos en una subred privada. Puede configurar la seguridad y el direccionamiento para que los servidores web se puedan comunicar con los servidores de base de datos.
+
+	- Las instancias de la subred pública pueden enviar el tráfico saliente directamente a Internet, mientras que las instancias de la subred privada no. 
+
+	- Las instancias de la subred privada pueden obtener acceso a Internet utilizando una gateway de conversión de direcciones de red (NAT) que resida en la subred pública. Los servidores de base de datos pueden conectarse a Internet para las actualizaciones de software a través de la gateway NAT, pero Internet no puede establecer conexiones a los servidores de base de datos.
+
+	- Puede utilizar el asistente de VPC para configurar una VPC con una instancia NAT; no obstante, se recomienda utilizar una gateway NAT.
+
+
+- La configuración de este escenario incluye lo siguiente:
+
+	- Una VPC con bloque de CIDR IPv4 de tamaño /16. Esto proporciona 256 direcciones IPv4 privadas.
+	- Una subred privada con bloque de CIDR IPv4 de tamaño /24. Esto proporciona 256 direcciones IPv4 privadas.
+	- Una gateway de Internet. Esto conecta la VPC a Internet y a otros servicios de AWS.
+	- Instancias con direcciones IPv4 privadas.
+	- Instancias en la subred pública con direcciones IPv4 elásticas.
+	- Una gateway NAT con su propia dirección IPv4 elástica.
+	- Una tabla de ruteo personalizada asociada a la subred pública.
+	- La tabla de ruteo principal asociada a una subred privada.

@@ -1,0 +1,52 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+EC2 - ELASTIC CLOUD COMPUTE
+
+- EC2 INSTANCE TYPE
+	- General Purpose.
+	- Compute Optimized.
+	- Memory Optimized.
+	- GPU.
+	- Storage Optimized.
+
+- T2 Burstable Performance Instances
+	- Baseline performance and ability to burst are governed by CPU credits.
+	- Credits are built up and store for up to 24hrs. instance is operating bellow the baseline performance.
+	- Credits are used to burst above baseline capacity when needed.
+	- If your instance does not maintain a positive CPU credit balance for bursting consider upgrading to larger instance.
+
+- EC2 STORAGE OPTIONS
+	- Instance Store
+		- Physically attached to the host server.
+		- Data Not Lost when OS is rebooted.
+		- Data Lost when:
+			- Underlying drive fails.
+			- Instance is stopped.
+			- Instance is terminated.
+		>> Do not rely on fo valuable long term data. 
+		>> Cannot detach and attach to another instance.
+
+	- ELASTIC BLOCK STORE (EBS)
+		- Replicated within AZ.
+		- EBS optimized instances provide dedicated throughput between EC2 and EBS volume.
+		- EBS volumes attached at instance launch are deleted when instance is terminated.
+		- EBS volumes attached to a running instance are not deleted when instance is terminated but are detached with data intact.
+
+- EBS STORAGE OPTIONS
+	- General Purpose (SSD)
+		- Default choice.
+
+	- Provisioned IOPS (SSD)
+		- Consistent and low-latency performance.
+		- I/O intensive applications such as large relational or NoSQL databases.
+
+	- Magenic
+		- Lower cost per Gigabyte.
+
+	- EBS Encryption
+		- AWS Key Management Service (KMS) master keys or Customer Master Key (CMK).
+		- Data stored at rest encrypted (including snapshots created) as well as data in transit between EBS and EC2.
