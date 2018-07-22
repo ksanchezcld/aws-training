@@ -1,0 +1,45 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+- Amazon ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud.
+
+- Amazon ElastiCache integrates with other Amazon web services such as:
+	- Amazon Elastic Compute Cloud (Amazon EC2).
+	- Amazon Relational Database Service (Amazon RDS).
+	- AWS CloudFormation.
+	- AWS Elastic Beanstalk.
+	- AWS OpsWorks.
+
+- The in-memory caching provided by Amazon ElastiCache improves application performance by storing critical pieces of data in memory for fast access.
+
+-  You can use this caching to significantly improve latency and throughput for many readheavy application workloads, such as social networking, gaming, media sharing, and Q&A portals.
+
+- Cached information can include the results of database queries, computationally intensive calculations, or even remote API calls. compute-intensive workloads that manipulate data sets, such as recommendation engines and high- performance computing simulations, also benefit from an inmemory data layer.
+
+- The Amazon ElastiCache architecture is based on the concept of deploying one or more cache clusters for your application. Once your cache cluster is up and running, the service automates common administrative tasks such as resource provisioning, failure detection and recovery, and software patching. 
+
+- Amazon ElastiCache provides detailed monitoring metrics associated with your cache nodes, enabling you to diagnose and react to issues very quickly.
+
+- Amazon ElastiCache can be used with relational databases such as:
+	- MySQL or Microsoft SQL Server.
+	- NoSQL databases such as 
+		- Amazon DynamoDB.
+		- MongoDB.  or with no database tier at all.
+
+
+- Alternatives to ElastiCache
+	- Amazon CloudFront content delivery network (CDN).
+	- Amazon RDS Read Replicas.
+	- On-host caching.
+
+
+
+
+
+
+
+
+

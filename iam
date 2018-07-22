@@ -4,7 +4,7 @@
 #    @ksanchez_cld (Twitter)    #
 #################################
 
-IAM - AWS Identity and Access Management
+- IAM - AWS Identity and Access Management
 
 - IAM. es un web service que ayuda a mantener un control de acceso seguro a los recursos de AWS para los usuarios.
 
@@ -16,21 +16,84 @@ IAM - AWS Identity and Access Management
 - Manejo de acceso temporal para usuarios/dispositivos y servicios.
 - Manejo de rotacion de politicas de contraseña.
 - Manejo de Roles.
+- Integracion con muchos servicios de AWS.
 
 
-CARASTERISTICAS
+- CARASTERISTICAS
 
-- Shared access to your AWS account. Puedes otorgar permisos a ortas personas para administrar y utilizr recursos en tu cuenta de AWS sin necesidad de compartir tu password o llave de acceso (Access Key).
+	- Shared access to your AWS account. Puedes otorgar permisos a ortas personas para administrar y utilizr recursos en tu cuenta de AWS sin necesidad de compartir tu password o llave de acceso (Access Key).
 
-- Granular permissions. Puedes otorgar diferentes permisos a diferentes personas para accesar a diferentes recursos.
+	- Granular Permissions. Puedes otorgar diferentes permisos a diferentes personas para accesar a diferentes recursos.
+
+	- Multifactor Authentication (MFA). Es posible agregar dos factores de autenticacion a la cuenta y a usuarios individuales para agregar una seguridad extra.
+
+	- Identity Federation. Puedes permitir usuarios que ya tienen cuentas credenciales en otro lugar (Facebook, Linkedin, etc.).
+
+	- Identity Information for Assurance. Se puede utilizar AWS CloudTrail para recibir logs que incluyan informacion acerca de esos cambios solicitados por los recursos de las cuentas.
+
+	- PCI-DSS Compliance. IAM soporta el procesamiento, almacenamiento y transmision de datos de tarjetas de credito por un comerciante (merchant) o proveedor de servicios. 
+
+	- Eventually Consistent. IAM logra una alta disponibilidad (HA) replicando los datos a traves de multiples servidores de los multiples datacenter (AZ) de Amazon que se encuentran en todo el mundo.
 
 
-COMPONENTES IAM.
+- COMPONENTES IAM.
 
-- Usuarios. 
-- Grupos.
-- Roles.
-- Politicas.
+	- Usuarios. 
+	- Grupos.
+	- Roles.
+	- Politicas.
+
+
+- MODOS DE ACCESO IAM.
+
+	- AWS Management Console.
+	- AWS Command Line Tools.
+	- AWS SDK
+	- IAM HTTPS API.
+
+- Cuenta ROOT y cuentas comunes.
+
+	- Cuando se utiliza una cuenta root tienes todo acceso sin restricciones a los recursos de AWS.
+	- Es recomendado usar el root account solo para la primera configuracion, no se recomienda para uso recurrente (daily access). 
+	- Es recomendable crear una cuenta IAM comun y agregar accesos administrativos para la gestion diaria de recursos.
+	- No se recomienda compartir la cuenta root.
+	- Por defecto el usuario comun no tiene acceso a ningun recurso AWS.
+	- Se otorgan los permisos al usuario comun a traves de la creacion de politicas.
+
+- MODO DE IDENTIFICAR EL ROOT ACCESS CREDENTIAL.
+
+	- Cuando se inicia sesion con una cuenta de correo + password es conocida como la cuenta root. Las cuentas comunes solo se registra con un nombre de usuario + password.
+
+
+- FEDERATION IDENTITY
+
+	- Los usuarios federados son otorgados de manera temporal, no tienen identidades permanentes en las cuentas AWS.
+
+	- La federacion es util en los siguientes casos:
+		- El usuario ya tiene identidades en un directorio corporativo. (ej. Active Directory, SAML).
+		- El usuario ya tiene identidad en internet. (Ej. Facebook, Google).
+
+	>> Para usar el servicio de federacion es recomendado utilizar el servicio de Amazon Cognito.
+
+
+- POLITICAS
+	- Toda accion o recurso que no esta explicitamente permitido, esta denegado por defecto.
+	- Las tablas de resumen de politicas describen el:
+		- Nivel de acceso (access Level).
+		- Recursos (resources).
+		- y condiciones (conditions). Que permiten o deniegan el acceso a cada servicio.
+	- Las politicas estan resumidas en 3 tablas:
+		- Resumen de politica (Policy Summary).
+		- Resumen de servicio (Service Summary).
+		- Resumen de accion (Action Summary).
+	- Las politicas se pueden ver como objetos desde la consola o en formato Json.
+	- Se puede organizar un usuario IAM dentro de un grupo y adjuntar una politica a ese grupo.
+	- Users y gripos pueden tener multiples politicas adjuntas para otorgar diferentes permisos. Aqui los permisos de usuarios son calculados en base a la combinacion de politicas. Sin embargo, si no se le ha otorgado permiso explicito al usuario para una accion o recurso, el usuario no tendra esos permisos.
+
+NOTAS
+
+- IAM es un servicio que no tiene costos adicionales para su uso. Solo sera cargado el uso de otros productos AWS usados por los usuarios IAM.
+- AWS Security Token Service. Es un servicio que no tiene costos adicionales. Solo sera cargado el uso de servicios AWS que son accedidos a traves de las credenciales de seguridad temporales (AWS STS).
 
 
 

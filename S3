@@ -4,6 +4,8 @@
 #    @ksanchez_cld (Twitter)    #
 #################################
 
+Amazon S3 - Simple Storage Service.
+
 SECURITY
 
 - S3 is secure by default. The bucket is private when created.

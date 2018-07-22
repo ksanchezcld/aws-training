@@ -1,0 +1,22 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+
+AWS offers you a pay-as-you-go approach for pricing for over 100 cloud services. With AWS you pay only for the individual services you need, for as long as you use them, and without requiring long-term contracts or complex licensing. 
+
+You only pay for the services you consume, and once you stop using them, there are no additional costs or termination fees.
+
+- Servicios de AMAZON que tienen costos vs los que no tienen costo.
+
+- INLCUYEN COSTOS
+
+	- AWS CodePipeline
+
+
+- NO INCLUYEN COSTOS
+
+	- IAM.
+- AWS Security Token Service.
