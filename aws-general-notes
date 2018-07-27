@@ -1,0 +1,11 @@
+Elastic IP addresses allow you to allocate
+a static IP address, and programmatically assign it to an instance.
+
+You can create auto scaling groups using the auto scaling feature to automatically scale your capacity based on CloudWatch metrics.
+
+You can distribute incoming traffic by using the Elastic Load Balancer (ELB) service.
+
+
+You can use the AWS CloudTrail service to monitor AWS API and AWS SDK calls for your account.
+
+Amazon EC2 Container Service is a cluster management and configuration management service. This service enables you to launch and stop container-enabled applications via API calls.

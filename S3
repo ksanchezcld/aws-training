@@ -6,35 +6,28 @@
 
 Amazon S3 - Simple Storage Service.
 
-SECURITY
+- Also known as object storage.
 
-- S3 is secure by default. The bucket is private when created.
-- IAM roles, users and groups.
-- Bucket policies applied at the bucket level.
-- Access Control List (ACL) applied at the bucket and object level.
+- Amazon S3 is a highly durable and distributed data store. Using a web services interface, you can store and retrieve large amounts of data as objects in buckets.
 
-S3 STORAGE CLASSES
+- In Amazon S3 data is stored as objects.
+	- Objects can be any file type.
+	- Objects are assigned an object key.
+	- The object key linked to each object is unique.
+	- Metadata can also be stored with each object.
 
-- Standard.
-	- 99.999999999% durability (Multi-AZ).
-	- 99.99% Availability.
-	- Support SSL encryption in transit and at rest.
-	- Lifecycle management.
+- Syncronously stored on multiple devices.
 
-- Standard - Infrequent Access (IA).
-	- Same feature as S3 standard.
-	- Lower per GB storage price than standard 
-	- Per GB retrieval fee.
+- The name of S3 bucket must be globally unique.
 
-- Standard - One Zone IA.
-	- 99.999999999% durability (Single AZ).
-	- 99.5% availability.
-	- Lower per GB storage price than standard IA.
-	- Per GB retrieval fee.
+- A bucket is created in private by default.
 
-- Reduced redundancy storage (RRS). 
-	- 99.99% durability and 99.99% availability.
-	- Being deprecated by AWS.
+- The content owner can always access the content of the bucket created.
+
+- The bucket has the following componets:
+	- Versioning.
+	- Loggin.
+	- Tags.
 
 
 BUCKET
@@ -64,12 +57,123 @@ LIFECYCLE POLICIES
 
 S3 VERSIONING
 
+- Versioning allows you to keep multiple versions of the same object in the same bucket.
 - Preserves copies of objects inside a bucket.
+- Preserve, retrieve, or restore every version of every object.
 - Individual objects can be restored to previous versions.
 - Deleted objects can be recovered.
+- Is enabled at the bucket level.
+- Is disabled by default.
+- Can be disabled, but not deleted.
+- Overriding an object result in a new object being created, with a new version number attached.
+- Versioning operation are managed by AWS.
+- Create lifeclycle policied to control dataflow.
+	- Archival and expiration dates.
+	- Integrated with AWS Glacier.
 
 
+SECURITY
+
+- S3 is secure by default. The bucket is private when created.
+- IAM roles, users and groups.
+- Bucket policies applied at the bucket level.
+- Access Control List (ACL) applied at the bucket and object level.
+- Permissions can be set in several ways:
+	- On each object.
+	- On each bucket.
+	- IAM policy or bucket policy.
+
+S3 SECURITY FEATURES
+
+- Access Logging.
+- Event Notifications.
+- CloudTrail Audit.
+- CORS Configuration.
+- Versioning.
+- CloudWatch S3 Metrics.
+
+DURABILITY
+
+- 99.999999999 - 11 9's durability.
+
+AVAILABILITY
+
+- 99.99 - 4 9's Availability.
+
+S3 STORAGE CLASS
+
+- Standard.
+	- 99.999999999% durability (Multi-AZ).
+	- 99.99% Availability.
+	- Support SSL encryption in transit and at rest.
+	- Lifecycle management.
+
+- Standard-IA - Infrequent Access (IA).
+	- Same feature as S3 standard.
+	- Lower per GB storage price than standard 
+	- Per GB retrieval fee.
+
+- Standard - One Zone IA.
+	- 99.999999999% durability (Single AZ).
+	- 99.5% availability.
+	- Lower per GB storage price than standard IA.
+	- Per GB retrieval fee.
+
+- Reduced redundancy storage (RRS). 
+	- 99.99% durability and 99.99% availability.
+	- Being deprecated by AWS.
 
 
+- Manage and securely control access to S3 objects.
+	- Classify your data type rather than location.
+	- Tag objects with key-value pairs.
+	- Create policies based on data type.
 
+
+[S3 DATA PROTECTION]
+
+- Client-side Encryption.
+
+- Server-side Encryption.
+	- Encryption is performed at the object level.
+	- Data is encypted during the writting to disk.
+	- Data is decrypted during the reading process.
+	- SSE encrypts the object data but not the associated metadata.
+		- Unencrypted metadata could be a compliance issue.
+
+- Use customer provided keys.
+
+- AWS provided Encryption keys (VAULT).
+
+- Protecting data in transit.
+	- Use ssl endpoints over HTTPS.
+	- Secure upload and download of data.
+	- Client side encryption before upload.
+
+- Protecting data in rest.
+	- AWS does the encryption and decryption process.
+	- Key management is encrypted by AWS S3 master Key.
+	- Key management is stored separately from your data.
+	- AWS 256-bit Encryption.
+	- Integrated with AWS KMS.
+
+[SERVICES THAT CAN BE INTEGRATED WITH S3]
+
+- EBS.
+- Dynamo DB.
+- Cloudfront.
+- Route 53.
+- Glacier.
+- CloudWatch.
+- EMR.
+- Lambda.
+- Kinesis.
+- RDS.
+
+- Amazon S3 - can be used with:
+	 - PCI-DSS. 
+	 - HIPPA. 
+	 - ITAR. 
+	 - SOC3.
+	 - ISO27001.
 

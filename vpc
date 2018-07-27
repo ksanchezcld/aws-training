@@ -4,7 +4,13 @@
 #    @ksanchez_cld (Twitter)    #
 #################################
 
-VPC SECURITY
+Amazon Virtual Private Cloud - VPC
+
+Allows you to extend your corporate network into a private cloud contained within AWS.
+
+Amazon VPC uses the IPSec tunnel mode that enables you to create a secure connection between a gateway in your data center and a gateway in AWS.
+
+VPC SECURITY.
 
 - Security Groups
 	- Firewall at the instance level.

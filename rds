@@ -1,5 +1,20 @@
+
+Amazon Relational Database Service (Amazon RDS)
+
+- Amazon Relational Database Service (Amazon RDS) provides an easy way to setup, operate, and scale a relational database in the cloud. 
+
+- Database options available from AWS include 
+	- MySQL.
+	- Oracle.
+	- MS-SQL Server.
+	- PostgreSQL.
+	- Amazon Aurora.
+	- MariaDB, 
+	- Oracle, 
+	- DynamoDB.
+
 - Managed relational database service.
-- Amazon Aurora, Mysql, MariaDB, Oracle, Microsoft SQL, Postgresql, DynamoDB.
 - Handles routines database task such as provisioning, patching, backup, recovery, failure detection, and repair.
 - Multi-AZ for production applications.
 - Allows failover to standby.
+- You can launch a DB instance and get access to a full-featured database, while reducing effort on common database administration tasks like backups, patch management, and so on.

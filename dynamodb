@@ -1,3 +1,14 @@
+Amazon DynamoDB 
+
+- is a NoSQL database service offered by AWS. 
+
+- It supports both document and key-value pairs, data models, and has a flexible schema. 
+
+- Integration with other AWS services, such as 
+	- Amazon Elastic MapReduce (Amazon EMR) 
+	- Redshift provide support for Big Data and BI applications, respectively. 
+	- AWS Data Pipeline provides an efficient means of moving data into and out of DynamoDB.
+
 - NoSQL Database.
 - Consist of:
 	- Tables.

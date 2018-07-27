@@ -1,9 +1,49 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
 Amazon Glacier
 
+
+- Amazon Glacier is low-cost storage service that is typically used for:
+	 - archiving and backups. 
+
+- Files are archived in vaults.
+	- Vaults are stored in regions.
+
+- Data at Rest are encypted using AES-256.
+
+- Data in Transit are encrypted using SSL end-points.
+
+- The retrieval time for data on Glacier is up to several hours.
+
 - Archiving Solution.
+
 - Lowest cost AWS object storage class.
+
 - 99.99999999% of durability across 3 AZs.
+
 - 3 retrieval options:
 	- Expedited (1-5 minutes).
 	- Standard (3-5 hours).
 	- Bulk (5-12 hours).
+
+[AMAZON GLACIER VAULT LOCK]
+
+-  Create lock policies.
+	- Write Once, Read Many (WORM).
+	- Deny deletes.
+
+- Contents cannot be modified once locked with a vault policy.
+
+- VAULT ACCESS POLICY = ACCESS.
+- VAULT LOCK POLICY = CONTENT.
+
+- Amazon Glacier supports:
+	- PCI-DSS.
+	- HIPPA.
+	- ITAR.
+	- SOC3.
+	- ISO 27001.

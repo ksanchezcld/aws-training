@@ -6,6 +6,12 @@
 
 - Amazon ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud.
 
+- Significantly boost the performance of your applications.
+
+- Supports Memcached and Redis in-memory caching solutions.
+
+- Supports higher reliability through automatic detection and replacement of failed nodes, automates patch management, and enables monitoring through integration with Amazon CloudWatch.
+
 - Amazon ElastiCache integrates with other Amazon web services such as:
 	- Amazon Elastic Compute Cloud (Amazon EC2).
 	- Amazon Relational Database Service (Amazon RDS).
@@ -17,29 +23,23 @@
 
 -  You can use this caching to significantly improve latency and throughput for many readheavy application workloads, such as social networking, gaming, media sharing, and Q&A portals.
 
-- Cached information can include the results of database queries, computationally intensive calculations, or even remote API calls. compute-intensive workloads that manipulate data sets, such as recommendation engines and high- performance computing simulations, also benefit from an inmemory data layer.
+- Cached information can include the results of database queries, computationally intensive calculations, or even remote API calls. compute-intensive workloads that manipulate data sets, such as recommendation engines and high-performance computing simulations, also benefit from an inmemory data layer.
 
 - The Amazon ElastiCache architecture is based on the concept of deploying one or more cache clusters for your application. Once your cache cluster is up and running, the service automates common administrative tasks such as resource provisioning, failure detection and recovery, and software patching. 
 
 - Amazon ElastiCache provides detailed monitoring metrics associated with your cache nodes, enabling you to diagnose and react to issues very quickly.
 
 - Amazon ElastiCache can be used with relational databases such as:
-	- MySQL or Microsoft SQL Server.
+	- MySQL.
+	- Microsoft SQL Server.
 	- NoSQL databases such as 
 		- Amazon DynamoDB.
 		- MongoDB.  or with no database tier at all.
 
 
+- ElastiCache can be scaled-up/scaled-down in response to the application load.
+
 - Alternatives to ElastiCache
 	- Amazon CloudFront content delivery network (CDN).
 	- Amazon RDS Read Replicas.
 	- On-host caching.
-
-
-
-
-
-
-
-
-

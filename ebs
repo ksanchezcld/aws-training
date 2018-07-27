@@ -1,0 +1,15 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+Amazon Elastic Block Storage (Amazon EBS).
+
+- Amazon EBS. Are volumes that provide network-attached persistent storage to the EC2 instances.
+
+- Amazon EBS is highly available and durable persistent block level storage volumes for use with Amazon EC2 instances.
+
+- You configure EBS with SSD (general purpose or provisioned IOPS) or magnetic volumes.
+	- Each EBS volume is automatically replicated within its Availability Zone (AZ).
+

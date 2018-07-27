@@ -6,6 +6,18 @@
 
 Amazon EC2 - ELASTIC COMPUTE CLOUD
 
+Amazon EC2 is a web service that provides compute capacity in the AWS cloud.
+
+- You can bundle the operating system, application software, and associated configuration settings into an Amazon Machine Image (AMI).
+
+- You can then use these AMIs to provision multiple virtualized instances as well as decommission them using web service calls. 
+
+- EC2 instances can be resized and the number of instances scaled up or down to match your requirements or demand.
+
+- These instances can be launched in one or more geographical locations or regions, and Availability Zones (AZs). connected by low latency networks in the same region.
+
+- You can enable monitoring on EC2 instances using Amazon CloudWatch.
+
 - EC2 INSTANCE TYPE
 	- General Purpose.
 	- Compute Optimized.

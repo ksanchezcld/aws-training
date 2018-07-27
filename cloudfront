@@ -1,0 +1,11 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+Amazon Cloudfront.
+
+- The Amazon CloudFront service is a CDN service for low latency content delivery (static or streaming content). 
+
+- Its copies of S3 objects can be distributed and cached at multiple edge locations around the world, by creating a distribution network using the Amazon CloudFront service.

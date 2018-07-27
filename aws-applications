@@ -1,0 +1,23 @@
+- Operational Cost: The architected solution for the e-commerce application should have a minimum monthly operational cost as nothing is free on the cloud.
+
+- The solution at the minimum should meet the minimum requirements for scalability, availability, fault tolerance, security, replication, and disaster recovery.
+
+- Scalability cloud infrastructure: The cloud infrastructure should scale the application up or down by adding/removing application nodes from the network, depending on the load on the application.
+
+- Scalability application: The architected solution should be designed in a decoupled and stateless manner, which lends itself to support scaling.
+
+- High availability: The architected solution will be designed in a manner which avoids single point failures in order to achieve high availability.
+
+- Fault tolerant: The application should be coded to handle cloud services' related failures to the extent possible.
+
+- Application security: The application should use an encrypted channel for communications. All the confidential data should be stored in an encrypted format. All the files at rest should be stored in an encrypted format.
+
+- Application security: The application should use an encrypted channel for communications. All the confidential data should be stored in an encrypted format. All the files at rest should be stored in an encrypted format.
+
+- Replication: All the data should be replicated in real time to a secondary location to reduce the window for data loss.
+
+- Backups: All the data from the databases shall be backed up on a daily basis.
+
+- Disaster recovery: The architected solution should be designed in a manner that it is easy to recover from an outage with minimal human intervention, with the help of automated scripts.
+
+- Design for failure: The architected solution should be designed for failure; in other words, the application should be designed, implemented, and deployed for automated recovery from failure.

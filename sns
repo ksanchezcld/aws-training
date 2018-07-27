@@ -1,0 +1,5 @@
+Amazon Simple Notification Service (Amazon SNS).
+
+- provides a simple way to notify applications or people from the cloud application. 
+
+- It uses the publish-subscribe protocol.
