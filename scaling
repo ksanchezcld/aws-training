@@ -1,0 +1,28 @@
+[Scaling Vertically]
+
+- An increase in the specifications of an individual resource.
+	 - upgrading a server with a larger hard drive or a faster CPU.
+
+On Amazon EC2, this can easily be achieved by stopping an instance and resizing it to an instance type that has more RAM, CPU, IO, or networking capabilities.
+
+
+[Scaling Horizontally]
+
+- An increase in the number of resources.
+	- adding more hard drives to a storage array or adding more servers to support an application.
+
+[Stateless Applications]
+
+- is an application that needs no knowledge of previous interactions and stores no session information.
+
+A stateless application can scale horizontally since any request can be serviced by any of the available compute resources.
+
+
+- Distribute load to multiple nodes
+ 	- Push model.
+ 		- Elastic Load Balancing (ELB).
+ 		- Route 53.
+
+ 	- Pull model.
+ 		- Amazon Simple Queue Service (SQS).
+ 		- Amazon Kinesis.
