@@ -1,0 +1,48 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+The best way to approach high availability design is to assume that anything can fail, at any time, and then consciously design against it.
+
+- There are many types of failures that can happen at any time. 
+	- These could be a result of disk failures. 
+	- power outages.
+	- natural disasters.
+	- software errors.
+	- human errors.
+
+- There are several points of failure in any given cloud application. These would include:
+	- DNS or domain services.
+	- Load balancers.
+	- Web and application servers.
+	- Database servers.
+	- Application services-related failures.
+	- Data center-related failures.
+
+- you should try to design your components to be stateless as far as possible.
+
+- In situations where you need to store the session state, ensure that you do so at a central location so that it is accessible from any instance serving user requests.
+
+- Implementing asynchronous processing wherever possible in your application can improve scalability. 
+
+- Ensure you implement a dead letter queue for queue requests that fail after several retries (usually between 3-5 times). 
+
+- Try to offload as much content as possible to the AWS CloudFront CDN service for distribution to Amazon edge locations. 
+
+- Configure an AWS ELB in your deployment architecture even if you are using a single EC2 instance behind it. This will ensure you are ready to scale up or down without interrupting your services.
+
+- ELB ensures the CNAME application access point remains the same as you auto scale the number of servers or even replace a fleet of servers behind it.
+
+- scale-out, that is, more EC2 instances will be added.
+
+- scaled in, that is, running EC2 instances will be removed based on some measureable metric. 
+
+- To create a working AWS auto scaling, we will create:
+	- An Elastic Load Balancer (ELB).
+	- A base AMI (which will be our EC2 instance running our e-commerce application).
+	- Launch Configuration (that is, the base AMI to launch in an EC2 instance).
+	- Alarms in CloudWatch in order to add/remove instances that apply to an Auto Scaling Group (ASG).
+
+- An AMI is a prerequisite for creating and using an auto scaling group.

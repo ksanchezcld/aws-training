@@ -1,0 +1,49 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+Amazon Glacier
+
+- Amazon Glacier es un servicio de almacenamiento optimizado para los datos que se utilizan poco o los "datos inactivos".
+- Amazon Glacier es un servicio de almacenamiento duradero extremadamente barato que cuenta con características de seguridad para archivar los datos y realizar backups. 
+- Con Amazon Glacier, los clientes pueden almacenar sus datos por un precio muy económico durante meses, años o incluso décadas.
+- Amazon Glacier es un servicio web RESTful que usa HTTP y HTTPS como transporte y la notación
+de objetos JavaScript (JSON) como formato de serialización de mensajes. 
+
+
+
+
+SINTAXIS
+
+   - https://<region-specific endpoint>/<account-id>/vaults/<vaultname>
+   - https://glacier.us-west-2.amazonaws.com/111122223333/vaults/examplevault
+
+• glacier.us-west-2.amazonaws.com identifica la región Región EE.UU. Oeste (Oregón). • 111122223333 es el ID de la cuenta de AWS que es la propietaria del almacén.
+
+• vaults hace referencia a la colección de almacenes propiedad de la cuenta de AWS.
+
+• examplevault identifica un almacén concreto de una colección de almacenes.
+
+
+- Los archivos pueden contener cualquier tipo de datos, como fotos, vídeos o documentos, y conforman
+la unidad básica de almacenamiento de Amazon Glacier. 
+- Cada archivo de almacenamiento tiene un identificador único y una descripción opcional. 
+- Amazon Glacier asigna al archivo un ID que es exclusivo para la región de AWS en la que está almacenado. 
+- Cada archivo tiene una dirección única.
+
+	- https://<region-specific endpoint>/<account-id>/vaults/<vault-name>/archives/<archive-id>
+	- https://glacier.us-west-2.amazonaws.com/111122223333/vaults/
+examplevault/archives/NkbByEejwEggmBz2fTHgJrg0XBoDfjP4q6iu87-
+TjhqG6eGoOY9Z8i1_AUyUsuhPAdTqLHy8pTl5nfCFJmDl2yEZONi5L26Omw12vcs01MNGntHEQL8MBfGlqrEXAMPLEArchiveId
+
+- Puede guardar un número ilimitado de archivos en un almacén.
+- Amazon Glacier cuenta con una solución de archivo de datos de almacenamiento en frío. 
+- La recuperación de archivos e inventarios de almacén (lista de archivos) son operaciones asincrónicas en Amazon Glacier en las que primero debe iniciarse un trabajo para poder descargar después la salida cuando Amazon Glacier finaliza el trabajo.
+	- solo las operaciones siguientes son asincrónicas:
+		• Recuperación de un archivo
+		• Recuperación de un inventario de almacén (lista de archivos)
+
+- Amazon Glacier cuenta con un mecanismo de notificación para avisarle cuando se complete un trabajo.
+- Amazon Glacier almacena la configuración de las notificaciones como un documento JSON.

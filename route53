@@ -1,0 +1,7 @@
+- Route 53 is AWS's highly available and scalable DNS and health checking service. 
+
+- Route 53 supports high availability architectures by health checking load balancer nodes and rerouting traffic to avoid the failed nodes, and by supporting implementation of multi-region architectures.
+
+- Route 53 uses Latency Based Routing (LBR) to route your customers to the endpoint that has the least latency. 
+
+- Amazon Route 53 health checks are conducted from within each AWS region to check whether your application is reachable from that location.

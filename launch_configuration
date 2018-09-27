@@ -1,0 +1,12 @@
+
+
+- A launch configuration is a template, which is used by the Auto Scaling Group to select and configure the EC2 instances. 
+
+This includes configuring:
+ - IAM role.
+ - The IP address.
+ - disk size.
+ - security group.
+ - public/private key-pair selection to access the instances.
+
+ - There is a limit of 100 launch configurations per region.

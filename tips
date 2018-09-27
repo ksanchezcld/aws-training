@@ -1,0 +1,27 @@
+
+
+- As a good security practice, in production servers, select the option of Do not assign a public IP address to any instances. If you want to access the instances, then you can create an EC2 instance that can only be connected to/from your static IP address and from there you can access any instance. This is sometimes called a bastion host or jump host.
+
+- Creating the auto scaling via the user interface is all good when you are doing it for the first time but later on it gets cumbersome and repetitive with potential for errors. The ideal way would be to automate the creation of an auto scaling group 
+via command line script.
+
+- It is not recommended to have different instance sizes between or within the AZs, the ELB will adjust for the number of requests it sends to smaller or larger instances based on response times.
+
+- Though auto-replacement of instances works really well, storing application state or caching locally on your instances can be hard to detect problems.
+
+- It is critically important to run your application stack in more than one zone to achieve high availability. 
+
+- For sites with very high request loads, a 3-zone configuration might be the preferred configuration to handle zone-level failures. if one zone goes down, then other two AZs can ensure continuing high availability.
+
+- In case of failover. Typically, it takes about 2 to 3 minutes from the time of the failure to the point where traffic is routed to an alternate location.
+
+[NETWORKING]
+
+- Gateway servers are defined in the public subnet with appropriate licenses and keys to access your servers in the private subnet for server administration purposes.
+
+- NAT is required for servers located in the private subnet to access the Internet and is typically used for automatic patch updates.
+
+
+[COSTS]
+
+- There is no bandwidth charge for cross-zone traffic (if you are using an ELB).

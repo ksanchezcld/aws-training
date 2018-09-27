@@ -1,0 +1,32 @@
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
+
+Health Check
+
+- ELB periodically sends requests to test the availability of the EC2 instances registered with it. These tests are called health checks.
+
+- EC2 instances that respond to pings at the time of the health check are marked as InService and the instances that do not respond are marked as OutOfService. 
+
+- The ELB performs health checks on all registered instances, regardless of whether the instance is in a healthy or unhealthy state.
+
+- ELB will route requests only to InService instances. 
+
+[COMPONENTS]
+
+- Ping Protocol: This is the protocol to connect to on the EC2 instance. It can be TCP, or HTTP/HTTPS. 
+
+- Ping Port: This is the port to connect to with the instance.
+
+- Ping Path: This is the HTTP/HTTPS destination for the health request. A HTTP/HTTPS GET request is issued to the instance on the Ping Port and the Ping Path. If the ELB receives any response other than 200 OK within the response timeout period, the instance is considered unhealthy.
+
+- Response Timeout: This is the time to wait when receiving a response from the health check. If the instance does not respond within the set time period, it is considered unhealthy. 
+
+- Health Check Interval: This is the amount of time in between the health checks. If you have low value, then you will increase
+the network traffic but a healthy/unhealthy EC2 instance can be detected quickly and vice versa.
+
+- Unhealthy Threshold: This is the number of consecutive health check failures before declaring an EC2 instance unhealthy or OutOfService. An OutOfService EC2 instance will only be detected after a time period of HealthCheck Interval * Unhealthy Threshold seconds. 
+
+- Healthy Threshold: Number of consecutive health check successes before declaring an EC2 instance healthy or InService. An InService EC2 instance will only be detected after a time period of HealthCheck Interval * Healthy Threshold seconds.

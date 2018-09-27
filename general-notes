@@ -35,3 +35,56 @@
 	- Improve the efficiency of maintaining content (by storing at one S3 location). 
 	- Reducing latency for your end users.
 	- Reducing overall costs (by reducing the size or the number of EC2 instances required for your web servers).
+
+
+MORE AWS SERVICES
+
+- CloudTrail (records AWS API calls).
+- AWS Config (provides you with a resource inventory and current configuration of your AWS resources).
+- AWS CloudHSM (helps you meet contractual obligations and/or compliance requirements).
+- AWS Key Management (to manage your data encryption keys).
+- AWS Elastic Beanstalk (for deploying and scaling web applications).
+- AWS OpsWorks (an application management service).
+- AWS CloudFormation (for provisioning a set of related AWS resources).
+- AWS CodeDeploy (for automating code deployments).
+- Amazon EMR (a hosted Hadoop framework).
+- Amazon Kinesis (for real time streaming data ingestion and processing).
+- Amazon SWF (a workflow service).
+- Amazon AppStream (for streaming from the cloud).
+- Amazon Elastic Transcoder (for conversion of media files).
+- Amazon SES (a bulk e-mail service).
+- Amazon CloudSearch (for applications that need a scalable search service functionality).
+
+
+AWS MONITORING AND PROTECTION
+
+- AWS Monitor for:
+	- Server and network usage.
+	- Port scanning activities.
+	- Application usage.
+	- Unauthorized intrusion attempts.
+
+- AWS Provides protections against:
+	- Distributed denial of service attacks - DDOS.
+	- Man in the middle attacks - MITM.
+	- IP Spoofing.
+	- Port Scanning.   >> Need to be approved by Amazon.
+	- Packet Sniffing.
+
+AWS CREDENTIALS
+
+- Password and Multifactor Authentication - MFA.
+	- AWS Management Console.
+	- MFA can be configure through IAM Policies.
+	- MFA support hardware tokens and virtual MFA devices.
+	- MFA conforms to RFC 6238 Time Based One Time Password - TOTP.
+
+- Access Keys
+	- Digital signed requests to AWS APIs.
+	- Signature calculated using the HMAC-SHA256 protocol.
+
+- Key Pairs
+	- Public/private key pair for signing into EC2 instances via SSH.
+
+- X.509 Certificates
+	- Mainly for SOAP based requests.

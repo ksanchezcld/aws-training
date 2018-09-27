@@ -1,0 +1,1 @@
+- The health checks are essentially automated requests sent over the Internet to your application to verify that your application is reachable, available, and functional. This can include both your EC2 instances and your application.

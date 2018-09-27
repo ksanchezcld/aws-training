@@ -1,3 +1,49 @@
-Elastic Load Balancing routes incoming application requests across multiple EC2 instances.
+#################################
+#        By Ksanchez            #
+# Security+ | MGP | Ps. Auditor #
+#    @ksanchez_cld (Twitter)    #
+#################################
 
-Amazon Web Services. Architecting for the AWS Cloud: Best Practices (AWS Whitepaper) (Kindle Locations 586-587). Kindle Edition. 
+Elastic Load Balancer
+
+- Elastic Load Balancing routes incoming application requests across multiple EC2 instances.
+
+- The elastic load balancer can only distribute the requests to the instances in a round-robin manner. 
+
+- If you need more complex routing algorithms, then either use the Amazon Route53 DNS service, Nginx as a reverse proxy, or HAProxy. 
+
+- ELB is designed to handle unlimited concurrent requests per second with a gradually increasing load pattern.
+
+- ELB is not designed to handle a sudden increase in requests, such as promotional sales, online exams, or online trading, where you might have a sudden surge of requests.
+
+- The ELB consists of three parts; they are as follows:
+
+	- Load Balancer: 
+
+	This monitors and handles the requests coming in through the Internet/intranet and distributes them to EC2 instances registered with it.
+
+	- Control Service: 
+
+	It automatically scales the handling capacity in response to incoming traffic by adding and removing load balancers as needed, and also does a health check on the load balancers.
+
+	- SSL Termination: 
+
+	ELB provides SSL termination that saves precious CPU cycles encoding and decoding SSL within your EC2 instances attached to the ELB. All it requires is a X.509 certificate to be configured within the ELB.
+
+- Load Balancer name: This is a name that uniquely identifies a load balancer. This name will be a part of the public DNS name of your load balancer.
+
+- Internal load balancer: An internal load balancer balances the Intranet traffic in a private subnet, that is, between your internal servers.
+
+	- Enable this option only when you want to load balance traffic between internal servers.
+
+- Listener Configuration: A listener is the process that listens for incoming requests of a protocol on a specific port from the client's side and relays it to an EC2 instance configured for a protocol and a port. It supports protocols both at the transport layer (TCP/SSL) and the application layer (HTTP/HTTPS). 
+
+
+- Select at least two Subnets in different Availability Zones to provide higher availability for your load balancer 
+
+- Cross-Zone Load Balancing: This option allows the ELB to route traffic across the availability zone.
+
+- Connection Draining: This feature only works when used in conjunction with auto scaling.
+
+		- If the ELB is processing a request, then this feature delays deregistering the instance by a predefined time period, thereby, potentially allowing the in-process request to complete. In addition, it stops routing traffic to the instance. After the elapsed time period, the ELB will deregister the instance and hopefully by that time, the instance would have processed all the pending requests.
+

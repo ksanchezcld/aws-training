@@ -7,3 +7,23 @@
 AMI (AMAZON MACHINE IMAGES)
 
 - Provide the information required to launch an instance.
+- Amazon Machine Image (AMI) is a master image for the creation of virtual servers on the Amazon cloud. 
+- An AMI contains instruction to launch an EC2 instance.
+	- This includes an operating system.
+	- Machine architecture 32 bit or 64 bit.
+	- Software stack for your applications.
+	- Launch permissions, disk size, etc.
+
+- An AMI is a prerequisite for creating and using an auto scaling group. 
+
+[configuration parameters]
+
+- No reboot: 
+
+By default, Amazon EC2 shuts down the instance, takes a snapshot of attached volumes, and then creates and registers the AMI. If this option is checked, then the EC2 instance will not shut down and the integrity of the filesystem cannot be guaranteed while creating the AMI.
+
+- Delete on Termination: 
+
+During auto scaling the EC2 instances are created or terminated depending upon the metrics you have configured for. During the launch of an EC2 instance, EBS volumes are created and referenced by the AMI; in our case, it is the Root volume. When the EC2 is terminated, the volume is not deleted, so over a period of time you accumulate EBS volumes that you have to pay unnecessarily, to store.
+
+- As our application is stateless and does not store any data on the instance, we can delete the EBS volume and hence save on the cost.
